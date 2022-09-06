@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-variant: small-caps;
+    font-size-adjust: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.music{
+    width: 300px;
+    height: 550px;
+    background: linear-gradient(-45deg, #009FFF, #ec2F4B);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1px;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    
+    10% { background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}
+}
+
+#main-back {
+    width: 200px;
+    height: 190px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.music h2, .music p {
+    margin-top: 0px;
+}
+
+.music p {
+    margin-top: -10px;
+}
+
+.play {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.next, .back, .play {
+    transition: 0.4s all ease;
+}
+
+.next:hover, .back:hover, .play:hover {
+    cursor:pointer;
+    transform: translate(0, -4px) rotate(360deg);
+}
+
+.volume input[type='range'] {
+    margin-bottom: 23px;
+    border-radius: 50%;
+    width: 150px;
+    height: 2px;
+    outline: none;
+    border:none;
+    -webkit-appearance: none;
+    background: darkred
+}
+
+.plus, .minus {
+    transition: 0.3s all ease;
+}
+
+.plus:hover {
+    transform: translate(4px, 0);
+    cursor: pointer;
+}
+
+.minus:hover {
+    transform: translate(-4px, 0);
+    cursor: pointer;
+}
+
+.range:hover {
+    cursor: pointer;
+}
+
+#volume-level {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.heart {
+    background-color: #ec2F4B;
+    overflow: hidde;
+    border-radius: 100%;
+}
+#pointer:hover {
+    cursor: pointer;
+}
+
+.speaker:hover, #suffle:hover {
+    cursor: pointer;
+}
+
+/*
+    editing the timing of the music
+    start
+    end
+*/
+
+#timer {
+    margin-bottom: 3px;
+    margin-right: 0px;  
+    background-color: black;
+    height: 4px;
+    border-radius: 14px;
+}
+#start, #end {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}

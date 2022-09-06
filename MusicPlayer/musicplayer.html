@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="musicplayer.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="music">
+            <img src='girl-ge7c0557ee_1280.jpg' id='main-back' />
+            <h2 id='title'> Music Name </h2>
+            <p id='artist'> Artist Name </p>
+            <p id='volume-level'>0</p>
+            <div class="volume">
+                <img class='minus' src="https://img.icons8.com/material-outlined/48/000000/minus.png"/>
+                <input type='range' min='0' max='100' step='1' class="range" ondragend="drags()"
+                onchange="drags()">
+                <img class='plus' src="https://img.icons8.com/android/48/000000/plus.png"/>
+            </div>
+            <div class="controls">
+                <img  id='suffle' src="https://img.icons8.com/fluency-systems-filled/24/000000/cross-shuffle.png"/>
+                <img class='heart' id='pointer' src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
+                <img class ='speaker' src="https://img.icons8.com/material-rounded/24/000000/speaker.png"/>
+            
+            </div>
+
+            <audio id="music-audio">
+                <source src='Selena Gomez - Rare (Pop Up Video)(MP3_70K).mp3' type='audio/mp3' >
+            </audio>
+            <div class="time">
+                <span id='start'> 00:00 </span> <div id='timer'> </div> <span id='end'> 00:00 </span>
+            </div>
+            
+            <div class="buttons">
+                <img class='back' src="https://img.icons8.com/ios-glyphs/50/000000/rewind-button-round.png"/>
+                <img class='play' id ='player' src="https://img.icons8.com/ios-filled/50/000000/play--v2.png"/ onclick="music()">
+                <img class='next' src="https://img.icons8.com/ios-glyphs/50/000000/fast-forward-round.png"/>
+            </div>
+        </div>
+    </div>
+    <script src='musicplayer.js'></script>
+</body>
+</html>
