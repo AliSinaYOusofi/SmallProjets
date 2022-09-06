@@ -1,0 +1,14 @@
+.imageSlider {
+    width: 100%;
+}
+.images {
+    text-align: center;
+}
+
+#boy {
+    max-width: 900px;
+}
+
+#next:hover, #back:hover {
+    cursor: pointer;
+}
