@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clock {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: linear-gradient(crimson, maroon, darkred);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.clock span {
+    text-align: center;
+    padding-top: 210px;
+    font-weight: 900;
+    font-family: Consolas, serif;
+    font-size: 180px;
+    color: white;
+    animation-name: golang;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes golang {
+    100% { color: red}
+}
